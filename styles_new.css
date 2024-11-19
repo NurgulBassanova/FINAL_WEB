@@ -1,0 +1,88 @@
+.welcome_picture{
+    width: 600px; 
+    height: 600px;
+}
+.welcome_h1{
+    font-size: 70px !important; 
+    margin: 150px 100px 20px 100px; 
+    text-align: center; 
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.welcome_h2{
+    font-size: 35px !important; 
+    margin-top: 0; 
+    text-align: center; 
+    color: white;
+}
+.switch {
+    position: absolute;
+    top: 90px;
+    right: 40px;
+    display: block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fffcfc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(103, 182, 105);
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #ffffff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
+.moon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 108px;
+    right: 45px;
+    display: block;
+}
+.sun{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 108px;
+    right: 73px;
+    display: block;
+}
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
